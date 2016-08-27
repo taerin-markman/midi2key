@@ -1,0 +1,186 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_SWGSONGSCOREWIN32 ACCELERATORS
+BEGIN
+    VK_F1,          IDC_FLOURISH1,          VIRTKEY, NOINVERT
+    VK_F2,          IDC_FLOURISH2,          VIRTKEY, NOINVERT
+    VK_F3,          IDC_FLOURISH3,          VIRTKEY, NOINVERT
+    VK_F4,          IDC_FLOURISH4,          VIRTKEY, NOINVERT
+    VK_F5,          IDC_FLOURISH5,          VIRTKEY, NOINVERT
+    VK_F6,          IDC_FLOURISH6,          VIRTKEY, NOINVERT
+    VK_F7,          IDC_FLOURISH7,          VIRTKEY, NOINVERT
+    VK_F8,          IDC_FLOURISH8,          VIRTKEY, NOINVERT
+    VK_F9,          IDC_FLOURISH_SILENCE,   VIRTKEY, NOINVERT
+    VK_F1,          IDC_BAND_FLOURISH1,     VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          IDC_BAND_FLOURISH2,     VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          IDC_BAND_FLOURISH3,     VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          IDC_BAND_FLOURISH4,     VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          IDC_BAND_FLOURISH5,     VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          IDC_BAND_FLOURISH6,     VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          IDC_BAND_FLOURISH7,     VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          IDC_BAND_FLOURISH8,     VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 206, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MIDI2KEY for LOTRO"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,149,7,50,16
+    LTEXT           "© 2007 by Nolaquen, Silverlode (pseudonym)",IDC_STATIC,7,147,192,8
+    LTEXT           "Comments: <taerin.markman@gmail.com>",IDC_STATIC,7,155,192,8
+    LTEXT           "",IDC_VERSION_TEXT,7,7,38,8
+    LTEXT           "Assuming you have not modified the MIDI2KEY.ini file, map the ""play note"" keys to the following, in order from 1 to 24:\n\t1-8:\tASDFGHJK\n\t9-16:\tQWERTYUI\n\t17-24:\t12345678",IDC_STATIC,7,25,192,42
+    CONTROL         "Enable Arpeggiator",IDC_ARPEGGIATOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,95,86,9
+    GROUPBOX        "Arpeggiator Controls",IDC_STATIC,7,108,192,36
+    CONTROL         "Freehand High Octave (for Melody)",IDC_FREEHANDHIGHOCTAVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,119,135,9
+    CONTROL         "Crawl Up (default: Crawl Down)",IDC_ARPCRAWLUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,130,123,9
+    LTEXT           "This assumes the 1.5-octave version of LOTRO's music system. Modify the MIDI2KEY.ini file as applicable to effectively use the 3-octave version.",IDC_STATIC,7,65,192,24
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        VERTGUIDE, 14
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,0,4
+ PRODUCTVERSION 0,9,0,4
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "MIDI2KEY"
+            VALUE "FileVersion", "0.9.0.4"
+            VALUE "LegalCopyright", "Copyright (C) 2007 Nolaquen Taurina, Silverlode (pseudonym)"
+            VALUE "OriginalFilename", "MIDI2KEY.exe"
+            VALUE "ProductName", "MIDI2KEY"
+            VALUE "ProductVersion", "0.9.0.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "SWG Song Score Win32"
+    IDC_SWGSONGSCOREWIN32   "SWGSONGSCOREWIN32"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
